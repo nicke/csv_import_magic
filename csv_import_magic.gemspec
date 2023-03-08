@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '>= 5.0'
   s.add_runtime_dependency 'csv-importer', '~> 0.8.2'
-  s.add_runtime_dependency 'paperclip', '~> 6.1.0'
+  s.add_runtime_dependency 'kt-paperclip', '~> 7.1', '>= 7.1.1'
   s.add_dependency 'orm_adapter', '~> 0.5.0'
   s.add_dependency 'simple_form', '~> 5.2.0'
   s.add_dependency 'sidekiq', '~> 7.0.6'
