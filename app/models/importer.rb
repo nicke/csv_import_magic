@@ -34,7 +34,7 @@ class Importer < ActiveRecord::Base
   end
 
   def human_attribute_name(column, options = {})
-    I18n.translate(:"activemodel.attributes.#{source_klass.model_name.i18n_key}.csv_import_magic.#{column}", options.merge(default: source_klass.human_attribute_name(column)))
+    I18n.translate(:"activemodel.attributes.#{source_klass.model_name.i18n_key}.csv_import_magic.#{column}", **options.merge(default: source_klass.human_attribute_name(column)))
   end
 
   private
