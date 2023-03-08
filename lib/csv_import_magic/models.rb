@@ -12,7 +12,7 @@ module CsvImportMagic
       end
 
       define_singleton_method(:csv_parser_default_name) { "#{name.to_s.underscore}_parser" }
-      define_singleton_method(:columns_names) { |param| options[0][param.to_s.remove('_parser').to_sym] }
+      define_singleton_method(:columns_names) { |param| options[param.to_s.remove('_parser').to_sym] }
     end
   end
 end
