@@ -1,6 +1,6 @@
 module CsvImportMagic
   module Models
-    def csv_import_magic(*options)
+    def csv_import_magic(options)
       define_method(:csv_parser_names) do
         names_of_parsers = {}
 
